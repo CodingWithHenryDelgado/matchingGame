@@ -103,3 +103,6 @@ const initialState = [
   
   export const selectVisibleIDs = (state) =>
   state.board.filter(card => card.visible === true).map(card => card.id);
+
+  export const selectMatchedIDs = state => 
+  state.board.filter(card => card.matched === true).map(card => card.id);
